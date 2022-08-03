@@ -1,0 +1,36 @@
+.headerMain{
+  width: max-content;
+  display: flex;
+  align-items: center;
+  margin-left: 1px;
+}
+.redes{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.imgArgPrograma{
+  max-width: 100px;
+  margin-left: 4px;
+}
+.imgRed{
+  max-width: 32px;
+  max-height: 32px;
+  align-items: flex-end;
+  margin-right: 4px;
+}
+.imgRed:hover{
+  cursor: pointer;
+}
+.imgFacebook{
+  position: relative;
+}
+.editar{
+  max-height: 32px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.banner{
+  max-width:1024px;
+  max-height:200px;
+}

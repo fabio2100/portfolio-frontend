@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: blue;
+}
+
+.seccionTitle{
+  color: whitesmoke;
+  background-color: black;
+  border-radius: 9px;
+}
+

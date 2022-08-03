@@ -1,1 +1,9 @@
-<p>acerca-de works!</p>
+<h1 class='seccionTitle'>Acerca de</h1>
+<div *ngIf="1; else elseBlock"><app-acerca-de-item></app-acerca-de-item></div>
+<ng-template #elseBlock><app-sin-contenido></app-sin-contenido></ng-template>
+
+<div *ngFor='let comentario of comentarios'>
+  
+</div>
+
+

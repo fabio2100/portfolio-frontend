@@ -1,0 +1,33 @@
+/* Contenedor General */
+.font {
+  font-family: 'Montserrat', sans-serif;
+  /* Controlar el tamaño de fuente */
+  font-size: 3vw;
+  font-weight: 700;
+  position: relative;
+  z-index: 9;
+}
+/* Color 1 superpuesto */
+span.color-1 {
+  color: #143791;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 60%;
+  overflow: hidden;
+}
+/* Color 2 */
+span.color-2 {
+  color: #434993;
+}
+/* Overlay */
+.overlay {
+  width: 100%;
+  height: 60%;
+  top: 0;
+  left: 0;
+  background-color: #36ccfe;
+  position: absolute;
+  z-index: -1;
+}

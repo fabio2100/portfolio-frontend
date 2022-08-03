@@ -12,4 +12,20 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  botonEditar(){
+    console.log('editar apretado')
+  }
+
+  linkToFacebook(){
+    window.open('https://www.facebook.com/fabio21')
+  }
+
+  linkToInstagram(){
+    window.open('https://www.instagram.com/fabios15')
+  }
+
+  linkToLinkedin(){
+    window.open('https://www.linkedin.com/in/squizzato-fabio/')
+  }
+
 }

@@ -9,6 +9,14 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { EducacionComponent } from './educacion/educacion.component';
 import { HardAndSoftComponent } from './hard-and-soft/hard-and-soft.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
+import { SinContenidoComponent } from './sin-contenido/sin-contenido.component';
+import { AcercaDeItemComponent } from './acerca-de-item/acerca-de-item.component';
+import { EducacionItemComponent } from './educacion-item/educacion-item.component';
+import { ExperienciaItemComponent } from './experiencia-item/experiencia-item.component';
+import { HardAndSoftItemComponent } from './hard-and-soft-item/hard-and-soft-item.component';
+import { ProyectosItemComponent } from './proyectos-item/proyectos-item.component';
+import {HttpClientModule} from '@angular/common/http'
+
 
 @NgModule({
   declarations: [
@@ -18,11 +26,18 @@ import { ProyectosComponent } from './proyectos/proyectos.component';
     ExperienciaComponent,
     EducacionComponent,
     HardAndSoftComponent,
-    ProyectosComponent
+    ProyectosComponent,
+    SinContenidoComponent,
+    AcercaDeItemComponent,
+    EducacionItemComponent,
+    ExperienciaItemComponent,
+    HardAndSoftItemComponent,
+    ProyectosItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
