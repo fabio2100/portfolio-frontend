@@ -1,5 +1,14 @@
 <p>educacion-item works!</p>
 
+<p>{{educaciones.length}}</p>
 
 
-
+<li *ngFor='let educacion of educaciones'>
+  <p>{{educacion.carrera}}</p>
+  <p>{{educacion.escuela}}</p>
+  <p>{{educacion.fin}}</p>
+  <p>{{educacion.imagen}}</p>
+  <p>{{educacion.inicio}}</p>
+  <p>{{educacion.puntuacion}}</p>
+  <p>{{educacion.titulo}}</p>
+</li>

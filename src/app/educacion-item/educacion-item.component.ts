@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
+import {HttpClient} from '@angular/common/http';
+import {Educacion} from '../educacion'
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-educacion-item',
@@ -8,10 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducacionItemComponent implements OnInit {
 
+  educaciones : any[]=[];
   
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.http.get<any>('http://localhost:8080/educations').subscribe(data=>{
+      this.educaciones = data;
+    })
   }
 
 }

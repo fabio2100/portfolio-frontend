@@ -9,13 +9,12 @@ import { Observable } from 'rxjs';
   styleUrls: ['./acerca-de-item.component.css']
 })
 export class AcercaDeItemComponent implements OnInit {
-  comentarios : any[]=[];
-  comentarios$: Observable<Comentario[]>;
+  personas : any[]=[];
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
-    this.http.get<any>('https://jsonplaceholder.typicode.com/posts/1/comments').subscribe(data=>{
-      this.comentarios = data;
+    this.http.get<any>('http://localhost:8080/personas').subscribe(data=>{
+      this.personas = data;
     })
   }
 

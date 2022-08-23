@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienciaItemComponent implements OnInit {
 
-  constructor() { }
+  experiencias : any[]=[];
+  constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
+    this.http.get<any>('http://localhost:8080/experiencialaboral').subscribe(data=>{
+      this.experiencias = data;
+    })
   }
 
 }
