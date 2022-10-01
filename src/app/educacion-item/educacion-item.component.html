@@ -3,12 +3,19 @@
 <p>{{educaciones.length}}</p>
 
 
-<li *ngFor='let educacion of educaciones'>
-  <p>{{educacion.carrera}}</p>
-  <p>{{educacion.escuela}}</p>
-  <p>{{educacion.fin}}</p>
+<li class='card' *ngFor='let educacion of educaciones'>
+  <div class='icono-display'>
+    <fa-icon class='icono btn btn-outline-danger' [icon]="faPenSquare"></fa-icon>
+    <fa-icon class='icono btn btn-outline-danger' [icon]="faTrash"></fa-icon>
+  </div>
+  <div class='card-body'>
+  <h5 class='card-title'>{{educacion.carrera}}</h5>
+  <h6 class='card-subtitle mb-2 text-muted'>{{educacion.titulo}}</h6>
+  <p>Lugar: {{educacion.escuela}}</p>
+  <p>Inicio: {{educacion.inicio | date: 'MMMM yyyy' }}</p>
+  <p>Finalización: {{educacion.fin | date: 'MMMM yyyy'}}</p>
   <p>{{educacion.imagen}}</p>
-  <p>{{educacion.inicio}}</p>
-  <p>{{educacion.puntuacion}}</p>
-  <p>{{educacion.titulo}}</p>
+  <p>Promedio académico: {{educacion.puntuacion}}</p>
+  
+</div>
 </li>

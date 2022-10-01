@@ -15,7 +15,10 @@ import { EducacionItemComponent } from './educacion-item/educacion-item.componen
 import { ExperienciaItemComponent } from './experiencia-item/experiencia-item.component';
 import { HardAndSoftItemComponent } from './hard-and-soft-item/hard-and-soft-item.component';
 import { ProyectosItemComponent } from './proyectos-item/proyectos-item.component';
-import {HttpClientModule} from '@angular/common/http'
+import { ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
+
 
 
 @NgModule({
@@ -32,12 +35,14 @@ import {HttpClientModule} from '@angular/common/http'
     EducacionItemComponent,
     ExperienciaItemComponent,
     HardAndSoftItemComponent,
-    ProyectosItemComponent
+    ProyectosItemComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

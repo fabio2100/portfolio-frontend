@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Educacion} from '../educacion'
 import { Observable } from 'rxjs';
+import { faPenSquare,faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-educacion-item',
@@ -11,6 +12,8 @@ import { Observable } from 'rxjs';
 export class EducacionItemComponent implements OnInit {
 
   educaciones : any[]=[];
+  faPenSquare = faPenSquare;
+  faTrash=faTrash;
   
   constructor(private http: HttpClient) { }
 

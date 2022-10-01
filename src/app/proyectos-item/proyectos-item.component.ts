@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faPenSquare,faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-proyectos-item',
@@ -7,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProyectosItemComponent implements OnInit {
 
+
+  faPenSquare = faPenSquare;
+  faTrash=faTrash;
   constructor() { }
 
   ngOnInit(): void {

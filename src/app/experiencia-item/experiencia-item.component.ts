@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { faPenSquare,faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-experiencia-item',
@@ -9,6 +10,8 @@ import { Component, OnInit } from '@angular/core';
 export class ExperienciaItemComponent implements OnInit {
 
   experiencias : any[]=[];
+  faPenSquare = faPenSquare;
+  faTrash=faTrash;
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {

@@ -1,8 +1,5 @@
-<p>acerca-de-item works!</p>
-<p>Esto es</p>
 
-<p>me lo ignoro o q </p>
-
-<li *ngFor='let persona of personas'>
+<li class='card' *ngFor='let persona of personas'>
+  <fa-icon class='icono btn btn-outline-danger' [icon]="faPenSquare"></fa-icon>
   <p>{{persona.sobre_mi}}</p>
 </li>

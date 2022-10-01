@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
 import {Comentario} from '../prueba'
 import { Observable } from 'rxjs';
+import { LocalService } from '../local.service';
+import { faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -12,23 +13,19 @@ import { Observable } from 'rxjs';
 })
 export class AcercaDeComponent implements OnInit {
 
-  //comentarios = COMENTARIOS;
-  comentarios$: Observable<Comentario[]>;
-  //comentariosObservante : {
-  //  complete: () => console.log('Observer got a complete notification'),
-  //}
+  loggeado:boolean=false;
   comentarios: any;
-  constructor(private http: HttpClient) { 
+  faPlusCircle = faPlusCircle;
+  constructor(private localStore:LocalService) { 
   
   }
 
   
 
   ngOnInit(): void {
-    this.http.get<any>('https://jsonplaceholder.typicode.com/posts/1/comments').subscribe(data=>{
-      this.comentarios$ = data.total;
-      
-    })
+    if(this.localStore.getItem('userLogin')){
+      this.loggeado = true;
+    }
   }
 
 }

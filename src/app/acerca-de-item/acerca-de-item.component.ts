@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Comentario} from '../prueba'
 import { Observable } from 'rxjs';
+import { faPenSquare,faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-acerca-de-item',
@@ -10,6 +11,8 @@ import { Observable } from 'rxjs';
 })
 export class AcercaDeItemComponent implements OnInit {
   personas : any[]=[];
+  faPenSquare = faPenSquare;
+  faTrash=faTrash;
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {

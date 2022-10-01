@@ -10,3 +10,34 @@ body {
   border-radius: 9px;
 }
 
+.titulo{
+  display: flex;
+  margin-top: 3%;
+  margin-left: 8px;
+}
+
+.icono{
+  margin-left: 12px;
+}
+
+.icono-display{
+  display: flex;
+}
+
+.icono:hover{
+  cursor: pointer;
+}
+
+.card{
+  display: flex;
+  margin: 8px;
+}
+
+p{
+  margin: 5px;
+}
+
+.agregar{
+  font-size: 1.5em;
+}
+

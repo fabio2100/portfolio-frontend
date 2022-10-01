@@ -34,3 +34,25 @@
   max-width:1024px;
   max-height:200px;
 }
+
+.iniciar-sesion{
+  border-radius: 20px 100px;
+}
+
+.noVisible{
+  display: none;
+}
+
+.loginCorrecto{
+  color: green;
+  visibility: visible;
+}
+
+.loginIncorrecto{
+  color: red;
+  visibility: visible;
+}
+
+.noVisible{
+  visibility: hidden;
+}

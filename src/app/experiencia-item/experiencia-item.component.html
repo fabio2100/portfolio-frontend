@@ -1,8 +1,13 @@
-<p>experiencia-item works!</p>
 
-<li *ngFor='let experiencia of experiencias'>
-  <p>{{experiencia.descripcion}}</p>
-  <p>{{experiencia.lugar}}</p>
-  <p>{{experiencia.inicio}}</p>
-  <p>{{experiencia.fin}}</p>
-</li>
+<div class='card' *ngFor='let experiencia of experiencias'>
+  <div class='icono-display'>
+    <fa-icon class='icono btn btn-outline-danger' [icon]="faPenSquare"></fa-icon>
+    <fa-icon class='icono btn btn-outline-danger' [icon]="faTrash"></fa-icon>
+  </div>
+  <div class='card-body'>
+  <h5 class='card-title'>{{experiencia.descripcion}}</h5>
+  <h6 class='card-subtitle mb-2 text-muted'>{{experiencia.lugar}}</h6>
+  <p>{{experiencia.inicio | date: 'MMMM yyyy'}}</p>
+  <p>{{experiencia.fin | date: 'MMMM yyyy'}}</p>
+</div>
+</div>
